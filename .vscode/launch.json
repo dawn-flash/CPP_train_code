@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    //.vscode文件夹中产生一个launch.json文件，用来配置调试的相关信息
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "(gdb) 启动",
+            "type": "cppdbg",  //配置类型
+            "request": "launch",//请求配置类型，可以为launch（启动）或attach（附加）
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [], //调试传递参数
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false, //是否使用外部窗口
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:\\program_software\\MinGW-64\\mingw64\\bin\\gdb.exe", //gdb路径
+            "preLaunchTask": "C/C++: g++.exe build active file", //调试前执行的任务，就是之前配置的tasks.json中的label字段
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}

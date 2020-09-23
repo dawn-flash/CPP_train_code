@@ -1,0 +1,11 @@
+{
+    "files.exclude": {
+        "**/*.exe": true
+    },
+    "files.associations": {
+        "iostream": "cpp",
+        "ostream": "cpp"
+    },
+    "fileheader.Author": "xt",
+    "fileheader.LastModifiedBy": "xt"
+}
