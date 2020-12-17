@@ -106,7 +106,7 @@ void Delete(int i,List L)
 //寻找下标为k的元素
 ElementType FindKth(int k,List L)
 {
-    if(k<0||k>L->Last)
+    if(k<0||k>L->Last) 
     {
         cout<<"没有该下标"<<endl;
         return -1;
